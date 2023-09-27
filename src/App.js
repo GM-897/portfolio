@@ -5,6 +5,7 @@ import Timeline from "./components/Timeline";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+// import About from "./components/About";
 import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 
@@ -31,7 +32,7 @@ function App() {
       <Work />
       <Timeline />
       <Services />
-      {/* <Testimonial /> */}
+      {/* <About /> */}
       <Contact />
       <Footer />
       <Toaster />

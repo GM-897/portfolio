@@ -1,8 +1,9 @@
-import React from "react";
-import { AiOutlineMenu,AiOutlineUser } from "react-icons/ai";
-// import yo from "../assets/king.png"
+import {React,createContext }from "react";
+import { AiOutlineMenu} from "react-icons/ai";
+
 
 const Header = ({ setMenuOpen, menuOpen }) => {
+
   return (
     <>
       <nav>
@@ -34,7 +35,7 @@ const NavContent = ({ setMenuOpen }) => (
         Home
       </a>
       <a onClick={() => setMenuOpen(false)} href="#work">
-        Work
+        Projects
       </a>
       {/* <a onClick={() => setMenuOpen(false)} href="#timeline">
         Experience
@@ -42,13 +43,14 @@ const NavContent = ({ setMenuOpen }) => (
       <a onClick={() => setMenuOpen(false)} href="#services">
         Services
       </a>
-      {/* <a onClick={() => setMenuOpen(false)} href="#testimonial">
-        Testimonial
-      </a> */}
+      <a onClick={() => setMenuOpen(false)} href="#About">
+        About
+      </a>
       <a onClick={() => setMenuOpen(false)} href="#contact">
         Contact
       </a>
     </div>
+
     <a href="mailto:manmohitgrandhi@gmail.com">
       <button>Email</button>
     </a>
